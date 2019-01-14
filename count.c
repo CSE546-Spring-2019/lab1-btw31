@@ -9,6 +9,7 @@ int scan(FILE *inputFile, unsigned char buffer[1], char *searchString, int len, 
 	int numMatches = 1;
 	
 	/* Loops through file, testing if next character matches the next search character. */
+	/* Note that this starts at the second character of the search string b/c the first char is checked in main */
 	while (fread(buffer, 1, 1, inputFile)==1 && matchFound == 2) {
 		if (buffer[0] == (searchString[pos] & 0xff)) {
 			numMatches++;
