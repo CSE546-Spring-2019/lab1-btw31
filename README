@@ -1,0 +1,11 @@
+CSE 5462 - T/R 9:35 Section
+Brent Wallenhorst
+
+Lab1
+
+Contents: lab1.c makefile README
+
+This program was created in stdlinux, so it should work fine there.
+
+To compile the program, type make on the command line. Type 'make clean' to remove the compiled executable. 
+Once the program is compiled, type './count <input-filename> <search-string> <output-filename>'.  
