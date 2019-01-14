@@ -32,7 +32,12 @@ int scan(FILE *inputFile, unsigned char buffer[1], char *searchString, int len, 
 }
 
 int main(int argc, char *argv[]) {
-	
+
+	if (argc != 4) {
+		printf("Incorrect number of args.\nPlease use: count <input-filename> <search-string> <output-filename>\n");
+		return(1);
+	}
+		
 	int isClosed;	
 	FILE *inputFile;
 	FILE *outputFile;
@@ -45,9 +50,11 @@ int main(int argc, char *argv[]) {
 	/* Attempts to open file */
 	if ((inputFile = fopen(inputFilename, "rb")) == NULL) {
 		printf("Error opening file!\n");
+		return 1;
 	}
 	if (( outputFile = fopen(outputFilename, "wb")) == NULL) {
 		printf("Error opening file!\n");
+		return 1;
 	}
 
 	/*Find length of file*/
