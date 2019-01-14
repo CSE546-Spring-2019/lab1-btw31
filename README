@@ -3,7 +3,7 @@ Brent Wallenhorst
 
 Lab1
 
-Contents: lab1.c makefile README
+Contents: lab1.c, makefile, and README
 
 This program was created in stdlinux, so it should work fine there.
 
