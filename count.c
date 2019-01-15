@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
 
 	printf("The size of the file is: %lu\n", size);
 	
-	int numWords = 0;
+	unsigned long numWords = 0;
 	unsigned char buffer[1];
 
 	/* Reads file, copies file, and searches for search string. */
@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	/* Reports number of matches and attempts to close file */
-	printf("Number of matches found: %d\n", numWords);
+	printf("Number of matches found: %lu\n", numWords);
 
 	isClosed = fclose(inputFile);
 	if(isClosed < 0) 
