@@ -1,4 +1,4 @@
-# Makefile for lab1.c
+# Makefile for count.c
 
 CC = gcc
 CFLAGS = -g -Wall
